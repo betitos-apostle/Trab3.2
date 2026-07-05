@@ -1,0 +1,169 @@
+.sla{   
+  background-size: cover;
+  position:absolute;
+
+  animation-name: desloca;  
+  animation-duration: 4s;       
+  animation-iteration-count: infinite;  
+  animation-timing-function:linear;   
+}
+
+@keyframes desloca {
+  0%{
+    left:50%
+
+  }
+  
+  50%{
+    left:85%
+  }
+
+  100%{
+    left:50%
+  }
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.foto{
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.naves{
+    padding: 2px 8px;
+    border: 2px solid black;
+    text-align: center;
+    flex: 1 1 0;
+    min-width: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#logo{
+    width: 6rem;
+    height: 6rem;
+    
+}
+
+#tit{
+    margin: 0px;
+    margin-left: 0.3rem;
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+}
+
+.secao-formulario {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.form-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   
+  gap: 40px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.figura {
+  background-image: url('imgs/piano.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 500px;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   
+  gap: 16px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.painel{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    gap: 8px;
+    padding: 10px;
+    border: 2px solid blue;
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.painel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.painel1 {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+.painel2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.painel3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.painel4 {
+  grid-column: 2;
+  grid-row: 2 / 4;
+}
+.painel5 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.painel6 {
+  grid-column: 3;
+  grid-row: 2 / 4;  
+}
+
+@media (max-width: 768px) {
+
+  .form-layout {
+    grid-template-columns: 1fr;   
+  }
+
+  .figura {
+    min-height: 250px;            
+  }
+
+  .campos {
+    grid-template-columns: 1fr;  
+  }
+
+  .campo:last-child {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 650px) {
+    .sla {
+    animation: none;
+    position: static;
+    transform: none;
+  }
+
+}
+

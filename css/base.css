@@ -1,0 +1,56 @@
+html{
+    background-color: #e8f4f0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+p{
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+}
+
+a:hover{
+    background-color: grey;
+
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 8px;
+  color: #333;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+}
+
+input,
+select,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer{
+    font-family: "Nunito", sans-serif;
+}

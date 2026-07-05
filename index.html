@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="refresh" content="400" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+            integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Notação musical</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="tit">Notação Musical</h1>
+            <img src="imgs/clave.png" id="logo" class="sla" alt="Logo do site" />
+        </header>
+
+        <nav>
+            <a class="naves" href="#rit">Notação Ritmíca</a>
+            <a class="naves" href="#claves">Claves</a>
+            <a class="naves" href="#compasso">Compasso</a>
+            <a class="naves" href="#escalas">Escalas</a>
+            <a class="naves" href="#galeria">Galeria</a>
+            <a class="naves" href="#">Voltar ao Topo</a>
+            <a class="naves" href="#painel_fotos">Painel de Fotos</a>
+            <a class="naves" href="#formulario">Formulário</a>
+        </nav>
+
+        <main>
+            <h2 id="rit">Notação Ritmíca</h2>
+            <br />
+            <p>
+                A notação rítmica é um sistema de escrita musical que representa a duração e o ritmo das notas musicais.
+                Ela utiliza símbolos específicos para indicar a duração de cada nota, bem como pausas e outros elementos
+                rítmicos. A notação rítmica é essencial para a comunicação musical, permitindo que os músicos
+                compreendam e executem as composições de maneira precisa. Os símbolos mais comuns incluem a semibreve,
+                mínima, semínima, colcheia, semicolcheia, fusa e semifusa, cada um representando uma duração específica.
+                Além disso, a notação rítmica também pode incluir sinais de pausa, como a pausa de semibreve, pausa de
+                mínima, pausa de semínima, entre outros, que indicam momentos de silêncio na música.
+            </p>
+            <img src="imgs/ritmos.jpeg" width="300" id="img1" alt="Imagem de ritmos musicais" /><br /><br />
+            <h2 id="claves">Claves</h2>
+            <br />
+            <p>
+                As claves são símbolos musicais que indicam a posição das notas na pauta. Elas são usadas para
+                determinar a altura das notas e a tonalidade da música. Existem diferentes tipos de claves, sendo as
+                mais comuns a clave de sol, a clave de fá e a clave de dó.
+            </p>
+            <img src="imgs/claves.png" width="300" id="img2" alt="Imagem de claves musicais" /><br /><br />
+            <h2 id="compasso">Compasso</h2>
+            <br />
+            <p>
+                O compasso é uma unidade de medida musical que organiza o ritmo e a estrutura de uma composição. Ele é
+                representado por um símbolo específico no início da pauta, indicando o número de tempos em cada compasso
+                e a duração de cada tempo. O compasso é fundamental para a execução precisa da música, permitindo que os
+                músicos mantenham o ritmo e a sincronização durante a performance. Existem diferentes tipos de
+                compassos, como o compasso binário, ternário e quaternário, cada um com suas próprias características
+                rítmicas e estruturais.
+            </p>
+            <img src="imgs/compassos.png" width="300" id="img3" alt="Imagem de compassos musicais" /><br /><br />
+            <h2 id="escalas">Escalas</h2>
+            <br />
+            <p>
+                As escalas são sequências de notas musicais organizadas em uma ordem específica, que formam a base para
+                a construção de melodias e harmonias. Elas são fundamentais para a compreensão da música, pois fornecem
+                um conjunto de notas que podem ser usadas para criar composições musicais. Existem diferentes tipos de
+                escalas, como a escala maior, a escala menor, a escala pentatônica e a escala cromática, cada uma com
+                suas próprias características e sonoridades.
+            </p>
+            <img
+                src="imgs/escalas.png"
+                width="300"
+                height="300"
+                id="img4"
+                alt="Imagem de escalas musicais"
+            /><br /><br /><br /><br />
+            <h2 id="galeria">Galeria</h2>
+            <br />
+            <div class="galeria">
+                <img src="imgs/claves.png" width="200" height="200" class="foto" alt="Imagem de claves musicais" />
+                <img src="imgs/ritmos.jpeg" width="200" height="200" class="foto" alt="Imagem de ritmos musicais" />
+                <img
+                    src="imgs/compassos.png"
+                    width="200"
+                    height="200"
+                    class="foto"
+                    alt="Imagem de compassos musicais"
+                />
+                <img src="imgs/escalas.png" width="200" height="200" class="foto" alt="Imagem de escalas musicais" />
+                <br /><br />
+            </div>
+
+            <section class="secao-formulario" id="formulario">
+                <div class="form-layout">
+                    <!-- FIGURA -->
+                    <img src="imgs/piano.png" class="figura" alt="Imagem de um piano" />
+
+                    <!-- FORMULÁRIO -->
+                    <form class="formulario" action="#" method="post">
+                        <fieldset>
+                            <legend>Informações Pessoais</legend>
+
+                            <div class="campos">
+                                <div class="campo">
+                                    <label for="nome">Nome completo</label>
+                                    <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required />
+                                </div>
+
+                                <div class="campo">
+                                    <label for="email">E-mail</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="exemplo@email.com"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="campo">
+                                    <label for="nascimento">Data de nascimento</label>
+                                    <input type="date" id="nascimento" name="nascimento" required />
+                                </div>
+
+                                <div class="campo">
+                                    <label for="telefone">Telefone</label>
+                                    <input type="tel" id="telefone" name="telefone" placeholder="+55 (00) 00000-0000" />
+                                </div>
+
+                                <div class="campo">
+                                    <label for="genero">Género</label>
+                                    <select id="genero" name="genero">
+                                        <option value="">Selecione...</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="outro">Outro</option>
+                                        <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                                    </select>
+                                </div>
+
+                                <div class="campo">
+                                    <label for="mensagem">Mensagem</label>
+                                    <textarea
+                                        id="mensagem"
+                                        name="mensagem"
+                                        rows="4"
+                                        placeholder="Escreva aqui..."
+                                    ></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="painel_fotos">
+                <br /><br />
+                <div class="painel">
+                    <img src="imgs/painel/bateria_p.png" alt="foto_painel" class="painel1" />
+
+                    <img src="imgs/painel/guitarra_p.png" alt="foto_painel" class="painel2" />
+
+                    <img src="imgs/painel/piano_p.png" alt="foto_painel" class="painel3" />
+
+                    <img src="imgs/painel/flauta-p.png" alt="foto_painel" class="painel4" />
+
+                    <img src="imgs/painel/violino_p.png" alt="foto_painel" class="painel5" />
+
+                    <img src="imgs/painel/violao_p.png" alt="foto_painel" class="painel6" />
+
+                    <img src="imgs/painel/sax_p.png" alt="foto_painel" class="painel7" />
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Feito por: Ryan da Costa Gomes, Aluno do 2º ano de Info, IFRS</p>
+        </footer>
+    </body>
+</html>
+
